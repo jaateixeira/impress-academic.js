@@ -269,8 +269,44 @@ a {
 a:hover {
   background-size: 0 3px, 100% 3px;
 }
+
+.full-img{
+	width: 900px; 
+	height: 700px; 
+	padding: 0; 
+}
+
+
+/* hide out inactive steps (aka slides) 
+
+Usage  <div class="step hide"> </div> 
+*/ 
+
+.hide.step.active {visibility: visible;}
+.hide.step:not(.active) { visibility: hidden;}
+
+
+
+.fig-credit {
+  padding-top: 0px;
+  color: DimGray;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.fig-credit:before {
+  content: 'Figure: ';
  
 
+.photo-credit {
+  padding-top: 10px;
+  color: DimGray;
+  font-size: 12px;
+  font-style: italic;
+}
 
+.photo-credit:before {
+  content: 'Photo: ';
+}
 
 
