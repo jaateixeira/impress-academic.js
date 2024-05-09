@@ -1,1 +1,276 @@
 
+body {
+/*
+	 font-family: 'PT Sans', sans-serif;
+    min-height: 740px;
+*/
+    font-family: "Roboto", sans-serif;
+    min-height: 740px;
+    
+
+    background: rgb(215, 215, 215);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    
+}
+
+
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+h1 {
+  display: block;
+  font-size: 1.0em;
+  margin-top: 0.0em;
+  margin-bottom: 0.47em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.0;
+}
+
+
+
+h2 {
+  display: block;
+  font-size: 0.7em;
+  margin-top: 0.23em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h4 {
+  display: block;
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+
+
+.t-red {color: DarkRed;}
+.t-orange {color: Orange;}
+.t-green {color: DarkGreen;}
+.t-blue {color: DarkBlue;}
+.t-purple {color: Purple;}
+.t-violet {color: DarkViolet;}
+.t-gold {color: DarkGondenRod}
+.t-indigo {color: Indigo}
+
+.highlight-blue {
+  background-color: #add8e6;
+  padding: 0 6px;
+}
+
+.highlight-red {
+  background-color: #ffcccb;
+  padding: 0 6px;
+}
+
+
+/* class list */ 
+.list {
+  display: inline-block; 
+  position: relative;
+  line-height: 1.0;
+  font-size: 70%;
+  margin-top: 10;
+
+}
+
+/* use for list headers on top*/ 
+.list h2 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.list ul {
+  position: relative;
+  list-style: none;
+  list-style-type: none;  
+  
+  margin-before: 0em;
+  margin-after: 0em;
+  margin-start: 0em;
+  margin-end: 0;
+  padding-start: 30px
+}
+
+
+/* list items are dimGray if nobody touches them */ 
+.list ul li {
+  position: relative;
+  /* left: 10px; */ 
+  color: DimGray;
+  border-left: 2px solid DarkBlue;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-left: 0px;
+  margin-bottom: 15px;
+}
+
+/* They become black if we hover on the them  */
+.list ul li:hover {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  left: 10px;
+  color: Black;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.list ul li:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 10px ;
+  background-color: DarkBlue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+}
+.list ul li:hover:before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  	color: DarkBlue;
+}
+
+
+
+/* 
+Links are based on https://css-tricks.com/css-link-hover-effects/ style
+	
+*/
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a {
+  background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+ 
+
+
+
+
