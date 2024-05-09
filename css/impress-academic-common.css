@@ -1,4 +1,5 @@
-
+/* Check with  https://jigsaw.w3.org/css-validator/validator  */
+/* Author Jose.Teixeira */ 
 body {
 /*
 	 font-family: 'PT Sans', sans-serif;
@@ -147,7 +148,7 @@ h4 {
 .t-blue {color: DarkBlue;}
 .t-purple {color: Purple;}
 .t-violet {color: DarkViolet;}
-.t-gold {color: DarkGondenRod}
+.t-gold {color: DarkGoldenRod}
 .t-indigo {color: Indigo}
 
 .highlight-blue {
@@ -167,7 +168,7 @@ h4 {
   position: relative;
   line-height: 1.0;
   font-size: 70%;
-  margin-top: 10;
+  margin-top: 10px;
 
 }
 
@@ -183,11 +184,10 @@ h4 {
   list-style: none;
   list-style-type: none;  
   
-  margin-before: 0em;
-  margin-after: 0em;
-  margin-start: 0em;
-  margin-end: 0;
-  padding-start: 30px
+  margin-top: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-bottom: 0em;
 }
 
 
@@ -296,7 +296,7 @@ Usage  <div class="step hide"> </div>
 
 .fig-credit:before {
   content: 'Figure: ';
- 
+}
 
 .photo-credit {
   padding-top: 10px;
@@ -309,4 +309,97 @@ Usage  <div class="step hide"> </div>
   content: 'Photo: ';
 }
 
+div.quote {
+	line-height: 1.0;
+	width: 800px; 
+	height: 320px;
+	margin-top: 0px; 
+	padding-top: 0px;	 
+	background-image: linear-gradient(
+			-45deg,
+			transparent,
+			transparent 2%,
+			white 2%,
+			white 85%,
+			transparent,
+			85%,
+			transparent
+		),
+		linear-gradient(to bottom right, #2ad, #2ad 90%, transparent 90%);
+	filter: drop-shadow(0 0 15px #0005);
+}
 
+
+p.quote::before {
+	top: -2rem;
+	left: 1rem;
+	content: open-quote;
+}
+
+p.quote::after {
+	bottom: -1rem;
+	right: 1rem;
+	content: close-quote;
+}
+
+h2.quote {
+	padding-top: 40px;
+	padding-left: 3em;
+	display: float; 
+	text-align: center;
+	width: 600px;
+	color: Darkblue;
+	font-size: 30px;
+	font-weight: bold;
+	text-shadow: -2px 2px #fff, -1.5px 1.5px #fff, -1px 1px #fff, -0.5px 0.5px #fff;
+}
+
+h4.quote {
+	padding-top: 0px;
+	padding-right: 40px;
+	margin-top: 0px;
+	text-align: right;
+	color: black;
+	text-shadow: -2px 2px #fff, -1.5px 1.5px #fff, -1px 1px #fff, -0.5px 0.5px #fff;
+	font-size: 18px;
+}
+
+
+p.quote {
+	padding-left: 10px;
+	color: black;
+	opacity: 1.0;
+	font-style:italic; 
+	font-size: 40px;
+	text-indent: 1ch;
+}
+
+
+
+div.academic-footer::before {
+	top: -2rem;
+	left: 1rem;
+	content: "To know more: \A ";
+	display: block; 
+   white-space: pre; 
+}
+
+div.academic-footer::after {
+	bottom: -1rem;
+	right: 1rem;
+	content: close-quote;
+}
+
+div.academic-footer {
+	color: black;
+	opacity: 1.0;
+	padding-top: 20px; 
+	font-size: 12px;
+}
+
+ul.ref-list {
+	list-style-position: inside; 
+	list-style-type: decimal;
+	padding-left: 20px;
+	color: black;;
+}
