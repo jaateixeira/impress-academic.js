@@ -121,8 +121,9 @@ h2 {
 
 
 h3 {
+  color: black;
   display: block;
-  font-size: 1.17em;
+  font-size: 0.7em;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 0;
@@ -140,6 +141,13 @@ h4 {
   font-weight: bold;
 }
 
+p{
+	opacity: 1.0;
+	color: black;
+	font-size: 0.7em;
+	padding-top: 10px;
+	line-height: 1.1;
+}
 
 
 .t-red {color: DarkRed;}
@@ -174,7 +182,7 @@ h4 {
 
 /* use for list headers on top*/ 
 .list h2 {
-  color: #fff;
+  color: black;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -270,11 +278,6 @@ a:hover {
   background-size: 0 3px, 100% 3px;
 }
 
-.full-img{
-	width: 900px; 
-	height: 700px; 
-	padding: 0; 
-}
 
 
 /* hide out inactive steps (aka slides) 
@@ -286,6 +289,52 @@ Usage  <div class="step hide"> </div>
 .hide.step:not(.active) { visibility: hidden;}
 
 
+.full-img{
+	width: 900px; 
+	height: 700px; 
+	padding: 0; 
+}
+
+
+img.banner {
+  padding-top: 10px;
+  margin: auto;
+  display: block;
+  width: 70%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+
+img.casual50 {
+  padding-top: 10px;
+  margin: auto;
+  display: block;
+  width: 50%;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+figure figcaption {
+  font-family: 'Courier', sans-serif;
+  font-size: 12px;
+  padding: 0;
+  margin-top: 0px;
+  text-align: center;
+}
 
 .fig-credit {
   padding-top: 0px;
