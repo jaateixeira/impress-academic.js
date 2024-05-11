@@ -159,6 +159,12 @@ p{
 .t-gold {color: DarkGoldenRod}
 .t-indigo {color: Indigo}
 
+.t-line-strikethrough:hover{
+  opacity:0.5;
+  transition: all 0s linear 0s;
+  text-decoration: line-through;
+}
+
 .highlight-blue {
   background-color: #add8e6;
   padding: 0 6px;
@@ -185,7 +191,7 @@ p{
   color: black;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .list ul {
   position: relative;
@@ -423,6 +429,34 @@ p.quote {
 	text-indent: 1ch;
 }
 
+cite {
+	font-size: 14px;
+	position: relative; 
+	top: -0.5em;   
+}
+
+
+/* List with arrows */
+#list-arrow-style { list-style:none; }
+#list-arrow-style li:before {
+    content: "\2192 \0020";
+}
+
+
+div.quote-collection {
+	color: inherit;
+	font-size: 50%;
+	padding-left: 10%;
+}
+
+ul.quote-collection {
+	color: inherit;
+	list-style: none;
+}
+
+li.quote-collection {
+	color: inherit;
+}
 
 
 #center {
@@ -442,15 +476,12 @@ p.quote {
 }
 
 
-
-
 div.academic-footer::before {
-	top: -2rem;
-	left: 1rem;
-	content: "To know more: \A ";
-	display: block; 
-   white-space: pre; 
+	padding-left: 20px;
+	padding-bottom: 0px;
+	content: "See: \A ";  
 }
+
 
 div.academic-footer::after {
 	bottom: -1rem;
@@ -461,11 +492,13 @@ div.academic-footer::after {
 div.academic-footer {
 	color: black;
 	opacity: 1.0;
-	padding-top: 20px; 
+	/* padding-left: 20px; */
+	padding-top: 0px; 
 	font-size: 12px;
 }
 
 ul.ref-list {
+	padding-top: 0px;
 	list-style-position: inside; 
 	list-style-type: decimal;
 	padding-left: 20px;
