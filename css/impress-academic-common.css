@@ -159,6 +159,12 @@ p{
 .t-gold {color: DarkGoldenRod}
 .t-indigo {color: Indigo}
 
+.t-line-strikethrough{
+  color: black;
+  opacity; 0.8;
+}
+
+
 .t-line-strikethrough:hover{
   opacity:0.5;
   transition: all 0s linear 0s;
