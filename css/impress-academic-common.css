@@ -425,6 +425,25 @@ p.quote {
 
 
 
+#center {
+  position: relative;
+  top: 100px; 		
+  width: 450px; 
+  margin: auto; 
+  text-align: center;
+  
+  /* Optional Styling */
+  padding: 20px;
+  border-style: solid;
+  border-color: #B6C7D6;
+  border-radius: 20px;
+  background-color: #EAF0F6;
+ 
+}
+
+
+
+
 div.academic-footer::before {
 	top: -2rem;
 	left: 1rem;
@@ -450,5 +469,6 @@ ul.ref-list {
 	list-style-position: inside; 
 	list-style-type: decimal;
 	padding-left: 20px;
-	color: black;;
+	color: black;
+	line-height: 1.1;
 }
