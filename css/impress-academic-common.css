@@ -459,7 +459,7 @@ li.quote-collection {
 }
 
 
-#center {
+div.center {
   position: relative;
   top: 100px; 		
   width: 450px; 
