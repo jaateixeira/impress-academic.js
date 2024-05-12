@@ -141,12 +141,20 @@ h4 {
   font-weight: bold;
 }
 
-p{
+p {
 	opacity: 1.0;
 	color: black;
 	font-size: 0.7em;
 	padding-top: 10px;
 	line-height: 1.1;
+}
+
+blockquote, q {
+  opacity: 1.0;
+  font-size: 0.3em;
+  padding-top: 10px;
+  line-height: 1.0;
+  color: blue;
 }
 
 
@@ -156,12 +164,12 @@ p{
 .t-blue {color: DarkBlue;}
 .t-purple {color: Purple;}
 .t-violet {color: DarkViolet;}
-.t-gold {color: DarkGoldenRod}
-.t-indigo {color: Indigo}
+.t-gold {color: DarkGoldenRod;}
+.t-indigo {color: Indigo;}
 
 .t-line-strikethrough{
   color: black;
-  opacity; 0.8;
+  opacity: 0.8;
 }
 
 
