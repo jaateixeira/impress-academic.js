@@ -403,6 +403,30 @@ img.city-flag{
 }
 
 
+img.casual20 {
+  padding-top: 10px;
+  margin: auto;
+  display: block;
+  width: 20%;
+  height: 20%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+img.casual30 {
+  padding-top: 10px;
+  margin: auto;
+  display: block;
+  width: 30%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: 100% auto;
+}
+
 
 img.casual50 {
   padding-top: 10px;
@@ -455,6 +479,17 @@ img.casual70 {
 }
 
 
+img.casual700x500 {
+  padding-top: 10px;
+  margin: auto;
+  display: block;
+  width: 700px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: 100% auto;
+}
 
 
 
