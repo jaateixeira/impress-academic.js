@@ -416,6 +416,48 @@ img.casual50 {
   background-size: 100% auto;
 }
 
+img.casual60 {
+  padding-top: 10px;
+  margin: auto;
+  display: block;
+  width: 60%;
+  height: 60%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+
+img.casual65 {
+  padding-top: 10px;
+  margin: auto;
+  display: block;
+  width: 65%;
+  height: 65%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+
+img.casual70 {
+  padding-top: 10px;
+  margin: auto;
+  display: block;
+  width: 70%;
+  height: 70%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+
+
+
+
 figure img {
   width: 100%;
   height: auto;
