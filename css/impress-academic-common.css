@@ -192,9 +192,14 @@ blockquote, q {
 }
 
 
+caption {
+		font-weight: bold;
+		padding-bottom: 10px;
+	}
 
 table.db {
-		  font-size: 50%; 
+		  width: 50%;
+		  font-size: 40%; 
 		  line-height: 1.0;
         border-collapse: collapse;
         width: 100%;
@@ -203,7 +208,6 @@ table.db {
 
 thead.db th {
    border: 1px solid black;
-  width: 25%;
 }
 
 
@@ -572,6 +576,7 @@ div.academic-footer::before {
 
 
 div.academic-footer::after {
+	bottom: -1rem;
 	bottom: -1rem;
 	right: 1rem;
 	content: close-quote;
