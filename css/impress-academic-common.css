@@ -190,6 +190,40 @@ blockquote, q {
 }
 
 
+
+table.db {
+		  font-size: 50%; 
+		  line-height: 1.0;
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px;
+}
+
+thead.db th {
+   border: 1px solid black;
+  width: 25%;
+}
+
+
+th.db, td.db {
+        padding: 8px;
+        text-align: left;
+		  border: 1px solid black;
+}
+
+th.db {
+        background-color: #f2f2f2;
+        border: 1px;
+}
+
+tr.db:nth-child(even) {
+        background-color: #f2f2f2;
+        border: 1px;
+}
+
+
+
+
 /* class list */ 
 .list {
   display: inline-block; 
