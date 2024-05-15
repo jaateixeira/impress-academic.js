@@ -151,10 +151,10 @@ p {
 
 blockquote, q {
   opacity: 1.0;
-  font-size: 0.3em;
+  font-size: 1.0em;
   padding-top: 10px;
   line-height: 1.0;
-  color: blue;
+  color: black;
 }
 
 
