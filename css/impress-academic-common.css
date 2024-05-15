@@ -151,10 +151,11 @@ p {
 
 blockquote, q {
   opacity: 1.0;
-  font-size: 1.0em;
-  padding-top: 10px;
+  font-size: 20px; 
+  padding-top: 0px;
   line-height: 1.0;
-  color: black;
+  /* color: black; */
+  color: blue;
 }
 
 
@@ -241,6 +242,19 @@ tr.db:nth-child(even) {
   letter-spacing: 1px;
   margin-bottom: 0px;
 }
+
+
+/* use for list headers on top*/ 
+.list h3 {  
+  padding: 0px;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+
+
 .list ul {
   position: relative;
   list-style: none;
@@ -374,6 +388,16 @@ img.country-flag{
 
 }
 
+img.city-flag{
+	display: inline;
+	vertical-align: middle;
+	margin: 0 0 0 0;
+	padding: 0;
+	width: 20px;
+	height:20px;  
+}
+
+
 
 img.casual50 {
   padding-top: 10px;
@@ -460,7 +484,7 @@ p.quote::after {
 h2.quote {
 	padding-top: 40px;
 	padding-left: 3em;
-	display: float; 
+	display:block; 
 	text-align: center;
 	width: 600px;
 	color: DarkBlue;
@@ -505,7 +529,7 @@ cite {
 
 div.quote-collection {
 	color: inherit;
-	font-size: 50%;
+	font-size: 20%;
 	padding-left: 10%;
 }
 
@@ -559,9 +583,11 @@ div.academic-footer {
 
 ul.ref-list {
 	padding-top: 0px;
+	font-size: 12px; 
 	list-style-position: inside; 
 	list-style-type: decimal;
 	padding-left: 20px;
-	color: black;
+	/* color: black;*/
+	color:blue;
 	line-height: 1.1;
 }
