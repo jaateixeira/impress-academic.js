@@ -151,11 +151,12 @@ p {
 
 blockquote, q {
   opacity: 1.0;
-  font-size: 20px; 
+  font-size: 75%;
+  font-style:italic; 
   padding-top: 0px;
   line-height: 1.0;
-  /* color: black; */
-  color: blue;
+  color: black; 
+  /*color: DarkBlue;*/
 }
 
 
@@ -523,14 +524,17 @@ cite {
 /* List with arrows */
 #list-arrow-style { list-style:none; }
 #list-arrow-style li:before {
+	font-size: 80%;
+	color: darkblue;
     content: "\2192 \0020";
+    
 }
 
 
 div.quote-collection {
 	color: inherit;
-	font-size: 20%;
 	padding-left: 10%;
+	line-height: 1.0;
 }
 
 ul.quote-collection {
@@ -587,7 +591,7 @@ ul.ref-list {
 	list-style-position: inside; 
 	list-style-type: decimal;
 	padding-left: 20px;
-	/* color: black;*/
-	color:blue;
+ 	color: black;
+	/* color: darkkhaki;*/ 
 	line-height: 1.1;
 }
