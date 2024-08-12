@@ -27,9 +27,7 @@ git clone https://github.com/jaateixeira/impress-academic.js.git
 - See [http://users.abo.fi/jteixeir/presentations/trial-lecture-16th-may/](http://users.abo.fi/jteixeir/presentations/trial-lecture-16th-may/) for a example on how to use it.
 
 You impress.js presentation must the include 
-```
-html 
-
+```html 
 	<link href="./impress-academic.js/css/impress-academic-common.css" rel="stylesheet" />
 ```
 
