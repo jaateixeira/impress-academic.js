@@ -18,7 +18,11 @@ Impress-academic.js is nothing without [impress.js](https://impress.js.org/).
 
 # How to use it for HTML/CSS/JS based presentations 
 
-- First clone the Impress-academic.js
+- First, you must clone the impress.js project
+  ```
+git clone https://github.com/impress/impress.js.git
+  ```  
+- Then clone the Impress-academic.js
 ```
 git clone https://github.com/jaateixeira/impress-academic.js.git
 ```
