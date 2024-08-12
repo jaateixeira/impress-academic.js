@@ -10,3 +10,10 @@ This stiles and scripts help you to make academic presentations on top of it.
 * Stiles that focus more on content
 * Style for pictures that take all the screen
 
+# How to use it for HTML/CSS/JS based presentations 
+
+- First clone the Impress-academic.js
+```
+git clone https://github.com/jaateixeira/impress-academic.js.git
+```
+
