@@ -17,3 +17,6 @@ This stiles and scripts help you to make academic presentations on top of it.
 git clone https://github.com/jaateixeira/impress-academic.js.git
 ```
 
+- The impress-academic-common.css with the defined classes is now avilable
+- See [http://users.abo.fi/jteixeir/presentations/trial-lecture-16th-may/](http://users.abo.fi/jteixeir/presentations/trial-lecture-16th-may/) for a example on how to use it.
+- 
