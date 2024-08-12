@@ -10,6 +10,10 @@ This stiles and scripts help you to make academic presentations on top of it.
 * Stiles that focus more on content
 * Style for pictures that take all the screen
 
+# Dependencies 
+
+Impress-academic.js is nothing without [doubt impress.js ](https://impress.js.org/#/bored)
+
 # How to use it for HTML/CSS/JS based presentations 
 
 - First clone the Impress-academic.js
@@ -19,4 +23,4 @@ git clone https://github.com/jaateixeira/impress-academic.js.git
 
 - The impress-academic-common.css with the defined classes is now avilable
 - See [http://users.abo.fi/jteixeir/presentations/trial-lecture-16th-may/](http://users.abo.fi/jteixeir/presentations/trial-lecture-16th-may/) for a example on how to use it.
-- 
+
