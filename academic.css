@@ -1,0 +1,302 @@
+
+
+header {
+
+	border: 1px solid yellow;
+
+}
+
+header h1 {
+	padding-top:  2px; 
+	padding-bottom: 2px;
+	line-height:1em;
+
+}
+
+header h2 {
+	padding-top:  2px; 
+	padding-bottom: 2px;
+	font-size: 75%;
+	line-height:0.9em;
+
+}
+
+article {
+	border: 1px solid orange;
+
+}
+
+section {
+	border: 1px solid orange;
+
+}
+
+
+
+/* For slides of pictures*/ 
+#slider {
+	border: 1px solid yellow;
+   margin: 1px auto 0;
+   position: relative;
+	
+	width: 100%;  
+   height: 100%;
+   
+
+}
+
+#slider img{
+	display: block;
+	position: relative;
+	/* Center it */ 
+	margin-left: auto;
+   margin-right: auto;
+   vertical-align: middle;
+   
+   /*  Its heasier to do slideer in spirals if you know the height */   
+   /* width: 800px;
+   height: 600px; */ 
+   min-width: 100%;
+   min-height: 100%; 
+  
+   margin: 1px auto 0;
+    
+}
+
+
+
+/* For showing an image in full-screen */ 
+/* If it is a small one, increase width in the html*/
+/* Based into simple way of centering in https://stackoverflow.com/questions/20878342/making-image-align-center-of-screen-in-html */ 
+img.fullscreen{
+  display: block;
+  position: fixed;
+  
+ /* Set rules to fill background */
+ /* 
+  min-height: 100%;
+  min-width: 1024px;
+ */ 
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  /* height: auto; */ 
+  height: 100%; 
+	
+  /* Set up positioning */
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+   
+  /* play with margin if not centered */  
+  /* margin:  -60px; */ 
+  
+  background-position:50% 50%;   
+  background-repeat:no-repeat;
+}
+
+
+
+/* anything in <footer class=referenceslist>" */
+footer.referenceslist{
+	/* border: 2px solid red; */   
+	/* background-color: #333 */
+	display: block;
+	position: fixed;
+	width: 95%; 	 	 
+	bottom: 1px;
+	padding: 1px; 
+	margin: 1px;   
+	vertical-align: bottom;
+	left: 0;
+}
+
+/* Anything in <footer> */ 
+footer{	
+   /* border: 1px solid red; 
+	background-color: #333;
+	display: block;	
+	position: fixed;
+	width: 95%; 	 
+   bottom: 0; 
+   padding:0; 
+   margin: 0;   
+	vertical-align: bottom;
+	*/
+   
+}
+
+
+
+footer ol li{
+	margin-left: 0px;  
+	font-size: 30%;
+	/* background: #ff9999; */ 
+	padding: 0px;
+	list-style-type: decimal;
+	margin-left: 30px; 
+	line-height: 0.85; 
+	
+	
+}
+
+
+footer ul li{
+	margin-left: 0px;  
+	font-size: 30%;
+	/* background: #ff9999; */ 
+	padding: 0px;
+	list-style-type: decimal;
+	margin-left: 30px; 
+	line-height: 0.85; 
+	
+	
+}
+
+footer p{
+	/* background: #ff9999; */ 
+	font-size: 40%;
+	margin-left:0px; 
+	vertical-align: bottom;
+
+}
+
+
+
+
+/*
+    These 'slide' step styles from impress.js were heavily inspired by HTML5 Slides:
+    http://html5slides.googlecode.com/svn/trunk/styles.css
+
+    ;)
+
+    They cover everything what you see on first three steps of the demo.
+*/
+.academic-slide{
+    width: 900px;
+    height: 700px;
+    padding: 40px 60px;
+
+
+}
+
+.academic-slide q{
+    display: block;
+    font-size: 50px;
+    line-height: 72px;
+
+    margin-top: 100px;
+}
+
+.academic-slide q strong{
+    white-space: nowrap;
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/ 
+/* From impress.js plugins */ 
+/* See https://github.com/impress/impress.js/blob/master/src/plugins/README.md */ 
+
+/* Using the substep plugin, hide bullet points at first, then show them one by one. */
+#impress .step .substep {
+    opacity: 0;
+}
+
+#impress .step .substep.substep-visible {
+    opacity: 1;
+    transition: opacity 1s;
+}
+/*
+  Speaker notes allow you to write comments within the steps, that will not 
+  be displayed as part of the presentation. However, they will be picked up
+  and displayed by impressConsole.js when you press P.
+*/
+.step .notes {
+  display: none;
+}
+
+
+
+/* Methodological cube stile */ 
+
+
+.mcubeslide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background: rgba(0,0,0,.2);
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    position: relative;
+    border:3px solid rgba(255,255,255,.5);
+}
+
+.mcubeslide h1{
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:black; 
+}
+
+
+/* To hide elements while they do not appear */ 
+
+/* fade out inactive slides */
+.step:not(.active) { opacity: 0.3; }
+.step.hide:not(.active) { opacity: 0; }
+
+
+/* fade out inactive slides footer */
+/* .mcubeslide.step:not(.active) footer { visibility: hidden; }
+.mcubeslide.step.hide:not(.active) footer { visibility: hidden;}
+*/ 
+ 
+.mcubeslide.step:not(.active) footer {opacity: 0.25;}
+.mcubeslide.step.hide:not(.active) footer { visibility: hidden;}
+
+
+
+
+#figurewithcaption {
+  float: inherit;
+  /* width: 30%; */
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  /* border: thin silver solid; */
+  margin: 0; 
+  padding: 0; 
+}
+
+
+
+
+#clipedfigure1 {
+  /* border: thin silver solid;*/ 
+  /* position: absolute; */
+  position: inherit ; 
+  /* display: block; */
+  clip: rect(0px, 800px, 600px, 0);
+  -webkit-transition: all 0.5s ease-out;
+     -moz-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+}
+
+#clipedfigure1:hover {
+  clip: rect(0px, 800px, 600px, 170px);
+}
+
+
+
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
