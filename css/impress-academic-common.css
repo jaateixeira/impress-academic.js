@@ -10,7 +10,6 @@ body {
     
 
     background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
     background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
@@ -317,6 +316,63 @@ tr.db:nth-child(even) {
 }
 
 
+.list ol {
+    position: relative;
+    list-style: none;
+    list-style-type: none;
+
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 0em;
+}
+
+
+/* list items are dimGray if nobody touches them */
+.list ol li {
+    position: relative;
+    /* left: 10px; */
+    color: DimGray;
+    border-left: 2px solid DarkBlue;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
+
+/* They become black if we hover on the them  */
+.list ol li:hover {
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    left: 10px;
+    color: Black;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.list ol li:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 10px ;
+    background-color: DarkBlue;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+}
+.list ol li:hover:before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    color: DarkBlue;
+}
+
+
 
 /* 
 Links are based on https://css-tricks.com/css-link-hover-effects/ style
@@ -479,6 +535,19 @@ img.casual70 {
 }
 
 
+img.casual80 {
+    padding-top: 10px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: 100% auto;
+}
+
+
 img.casual700x500 {
   padding-top: 10px;
   margin: auto;
@@ -513,6 +582,7 @@ figure figcaption {
   color: DimGray;
   font-size: 10px;
   font-style: italic;
+    text-align: center;
 }
 
 .fig-credit:before {
