@@ -466,7 +466,6 @@ img.casual20 {
   margin: auto;
   display: block;
   width: 20%;
-  height: 20%;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -478,7 +477,7 @@ img.casual30 {
   margin: auto;
   display: block;
   width: 30%;
-  height: 30%;
+
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -491,7 +490,6 @@ img.casual50 {
   margin: auto;
   display: block;
   width: 50%;
-  height: 50%;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -503,7 +501,7 @@ img.casual60 {
   margin: auto;
   display: block;
   width: 60%;
-  height: 60%;
+
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -516,7 +514,7 @@ img.casual65 {
   margin: auto;
   display: block;
   width: 65%;
-  height: 65%;
+
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -529,12 +527,24 @@ img.casual70 {
   margin: auto;
   display: block;
   width: 70%;
-  height: 70%;
+
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
   background-size: 100% auto;
 }
+
+img.casual80 {
+  padding-top: 10px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: 100% auto;
+}
+
 
 
 img.casual700x500 {
