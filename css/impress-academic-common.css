@@ -578,10 +578,11 @@ figure figcaption {
 }
 
 .fig-credit {
-  padding-top: 0px;
+  padding-top: 2px;
   color: DimGray;
   font-size: 10px;
   font-style: italic;
+  text-align: center;
 }
 
 .fig-credit:before {
