@@ -275,7 +275,8 @@ tr.db:nth-child(even) {
 .list ul li {
   position: relative;
   /* left: 10px; */ 
-  color: DimGray;
+  /* color: DimGray; */
+  color: #111111;
   border-left: 2px solid DarkBlue;
   transition: 0.5s;
   cursor: pointer;
@@ -316,6 +317,7 @@ tr.db:nth-child(even) {
 }
 
 
+
 .list ol {
     position: relative;
     list-style: none;
@@ -332,7 +334,8 @@ tr.db:nth-child(even) {
 .list ol li {
     position: relative;
     /* left: 10px; */
-    color: DimGray;
+    /* color: DimGray; */
+    color: #111111;
     border-left: 2px solid DarkBlue;
     transition: 0.5s;
     cursor: pointer;
@@ -371,7 +374,6 @@ tr.db:nth-child(even) {
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     color: DarkBlue;
 }
-
 
 
 /* 
@@ -535,19 +537,6 @@ img.casual70 {
 }
 
 
-img.casual80 {
-    padding-top: 10px;
-    margin: auto;
-    display: block;
-    width: 80%;
-    height: 80%;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
-    background-size: 100% auto;
-}
-
-
 img.casual700x500 {
   padding-top: 10px;
   margin: auto;
@@ -582,7 +571,6 @@ figure figcaption {
   color: DimGray;
   font-size: 10px;
   font-style: italic;
-    text-align: center;
 }
 
 .fig-credit:before {
@@ -747,3 +735,51 @@ ul.ref-list {
 	/* color: darkkhaki;*/ 
 	line-height: 1.1;
 }
+
+
+/* 2 Pic side by side
+ Pic Pic */
+
+.left-image {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-image {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid black;
+}
+
+
+.proposition {
+				margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        .proposition h2 {
+        		padding-top: 10px; 
+            font-size: 0.8em;
+            font-weight: bold;
+            line-height: 1.0;
+            text-align: left;
+        }
+        .proposition p {
+            text-indent: 20px;
+        }
+
+
