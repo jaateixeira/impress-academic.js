@@ -148,16 +148,24 @@ p {
 	padding-top: 10px;
 	line-height: 1.1;
 }
-
+/* Override impress.js defaults for quotes */
 blockquote, q {
-  opacity: 1.0;
+  line-height: 1.2 !important;
   font-size: 75%;
-  font-style:italic; 
-  padding-top: 0px;
-  line-height: 1.0;
-  color: black; 
-  /*color: DarkBlue;*/
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  color: #111111;
+  quotes: "“" "”" "‘" "’";
+  display: inline-block;
+  vertical-align: top;
 }
+
+/* Remove extra space around blockquotes */
+blockquote {
+  margin: 10px 0; /* Adjust if needed */
+}
+
 
 
 .t-red {color: DarkRed;}
@@ -601,7 +609,7 @@ figure figcaption {
 }
 
 div.quote {
-        line-height: 1.4; /* Better readability */
+        line-height: 1.1; /* Better readability */
         width: 800px;
         padding: 30px; /* Adds internal spacing */
         margin: 0 auto; /* Centers the box */
@@ -657,6 +665,8 @@ h4.quote {
 }
 
 
+        
+
 p.quote {
 	padding-left: 10px;
 	color: black;
@@ -671,6 +681,31 @@ cite {
 	position: relative; 
 	top: -0.5em;   
 }
+
+ .citation {
+        vertical-align: super;
+        font-size: 0.7em;
+        line-height: 1; /* Prevents extra spacing */
+    }
+
+
+.quote {
+        line-height: 1.1;
+        width: 800px;
+        padding: 30px;
+        background-image: 
+            linear-gradient(-45deg, transparent, transparent 2%, white 2%, white 85%, transparent 85%),
+            linear-gradient(to bottom right, #2ad, #2ad 90%, transparent 90%);
+        filter: drop-shadow(0 0 15px #0005);
+        box-sizing: border-box;
+    }
+ 
+br.quote-space {
+    display: block; /* Treat <br> as a block element */
+    content: "";    /* Remove default line break behavior */
+    margin-bottom: 30px; /* Set your desired space */
+} 
+ 
 
 
 /* List with arrows */
