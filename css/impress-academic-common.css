@@ -833,11 +833,11 @@ ul.ref-list {
 
 .comparison {
     display: flex; /* Use flexbox to align items side by side */
-    gap: 20px; /* Add some space between the items */
+    gap: 10px; /* Add some space between the items */
 }
 .comparison-item {
     flex: 1; /* Allow items to grow and shrink as needed */
     border: 1px solid #ccc; /* Optional: Add a border for visual separation */
-    padding: 10px; /* Optional: Add some padding */
+    padding: 5px; /* Optional: Add some padding */
     text-align: center; /* Optional: Center the text */
 }
