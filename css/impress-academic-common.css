@@ -706,6 +706,13 @@ br.quote-space {
     margin-bottom: 30px; /* Set your desired space */
 } 
  
+/* For superscript text after quotes */
+.quote-superscript {
+    font-size: 0.7em;
+    vertical-align: super;
+    line-height: 0;
+    margin-left: 0.1em;
+}
 
 
 /* List with arrows */
